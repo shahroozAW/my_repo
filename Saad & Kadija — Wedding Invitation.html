@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saad &amp; Kadija — Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Amiri&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#fbf1ee; --surface:#fffaf8; --ink:#4a2b30; --muted:#8a6a6e;
+  --rose:#b5525f; --gold:#b8924a; --line:#ecd3cd; --hero1:#f6e2dc; --hero2:#e9b9b6;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#241719; --surface:#2f1f22; --ink:#f4e3df; --muted:#c3a3a3;
+    --rose:#e08b95; --gold:#d9b673; --line:#4a3236; --hero1:#3a2327; --hero2:#52303a;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#241719; --surface:#2f1f22; --ink:#f4e3df; --muted:#c3a3a3;
+  --rose:#e08b95; --gold:#d9b673; --line:#4a3236; --hero1:#3a2327; --hero2:#52303a;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-size:19px;line-height:1.6;text-align:center}
+section{padding:72px 24px;max-width:720px;margin:0 auto}
+.script{font-family:"Great Vibes","Brush Script MT",cursive;font-weight:400}
+.arabic{font-family:Amiri,"Traditional Arabic",serif;font-size:1.7rem;color:var(--gold);margin:0 0 6px}
+.eyebrow{letter-spacing:.3em;text-transform:uppercase;font-size:.8rem;color:var(--muted)}
+h1,h2{font-weight:600;margin:0}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;max-width:none;
+  background:radial-gradient(circle at 50% 0%,var(--hero1),transparent 70%),linear-gradient(180deg,var(--hero1),var(--hero2) 140%)}
+.hero h1{font-size:clamp(3.4rem,14vw,6.5rem);line-height:1.05;margin:18px 0}
+.hero .amp{display:block;font-size:.5em;color:var(--rose)}
+.divider{width:120px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:22px auto}
+.dear{font-size:2.6rem;color:var(--rose);margin:0 0 12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:32px 24px;margin:22px 0;box-shadow:0 8px 30px rgba(120,60,70,.08)}
+.card h2{font-size:2.2rem;color:var(--rose)}
+.num{color:var(--gold);letter-spacing:.2em;font-size:.85rem}
+.when{font-size:1.25rem;margin:10px 0 2px}
+.venue{font-weight:600;margin-top:14px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
+a.btn,button.btn{font:inherit;font-size:.95rem;padding:10px 20px;border-radius:999px;border:1px solid var(--rose);color:var(--rose);background:transparent;text-decoration:none;cursor:pointer}
+a.btn.fill{background:var(--rose);color:var(--surface)}
+.count{display:flex;gap:12px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.count div{min-width:72px;padding:14px 8px;border-radius:14px;background:var(--surface);border:1px solid var(--line)}
+.count b{display:block;font-size:2rem;color:var(--rose);font-weight:600}
+.count span{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.family{list-style:none;padding:0;margin:14px 0 0}
+.family li{padding:6px 0;border-bottom:1px dashed var(--line)}
+.family a{color:var(--muted);text-decoration:none;font-size:.95rem;margin-left:6px}
+.footer{padding:56px 24px 40px;color:var(--muted);font-size:1rem}
+.footer .script{font-size:2.4rem;color:var(--rose)}
+.heart{position:fixed;pointer-events:none;font-size:22px;animation:fall 2.4s ease-in forwards;z-index:5}
+@keyframes fall{from{transform:translateY(0) rotate(0);opacity:1}to{transform:translateY(90vh) rotate(260deg);opacity:0}}
+#gate{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,var(--hero1),var(--hero2));cursor:pointer;transition:opacity .8s,visibility .8s;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+#gate.open{opacity:0;visibility:hidden}
+#gate h1{font-size:clamp(3rem,12vw,5.5rem);margin:6px 0}
+#gate .tap{margin-top:26px;padding:12px 28px;border:1px solid var(--rose);border-radius:999px;color:var(--rose);letter-spacing:.25em;text-transform:uppercase;font-size:.8rem}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.heart{animation:none;opacity:0}}
+</style>
+</head>
+<body>
+
+<div id="gate" role="button" tabindex="0" aria-label="Open invitation">
+  <p class="eyebrow">You are invited</p>
+  <h1 class="script">Saad</h1>
+  <div class="script" style="font-size:2rem;color:var(--gold)">&amp;</div>
+  <h1 class="script">Kadija</h1>
+  <div class="tap">Tap to open</div>
+</div>
+
+<section class="hero">
+  <p class="arabic" lang="ar" dir="rtl">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+  <p class="eyebrow">In the name of God, the most Gracious, the most Merciful</p>
+  <div class="divider"></div>
+  <p>We cannot wait to celebrate with you.</p>
+  <p class="eyebrow">With love</p>
+  <h1 class="script">Saad <span class="amp">&amp;</span> Kadija</h1>
+  <p class="eyebrow">10 &amp; 12 December 2026</p>
+  <p style="margin-top:40px;color:var(--muted);font-size:.9rem">Scroll down ↓</p>
+</section>
+
+<section>
+  <p class="eyebrow">With the blessing of Allah</p>
+  <div class="card">
+    <p class="eyebrow">Groom’s Side</p>
+    <h2 style="font-size:1.7rem;margin-top:6px">Mr. &amp; Mrs. Nadeem Shahzad</h2>
+    <ul class="family">
+      <li>Abdul Basit <a href="tel:03218353005">0321 8353005</a></li>
+      <li>Usama <a href="tel:03044368977">0304 4368977</a></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2 class="dear script">You Are Warmly Invited</h2>
+  <div class="divider"></div>
+  <p>Your presence is the blessing we are asking for. Over these few days two families become one, and it would not be complete without the people who have loved us all our lives. Come dine with us, celebrate with us, pray with us and stay late — we have saved you a place.</p>
+</section>
+
+<section>
+  <p class="eyebrow">Until Walima</p>
+  <h2 style="font-size:2.2rem">Countdown</h2>
+  <div class="count" id="count" aria-live="off">
+    <div><b id="d">0</b><span>Days</span></div>
+    <div><b id="h">0</b><span>Hours</span></div>
+    <div><b id="m">0</b><span>Minutes</span></div>
+    <div><b id="s">0</b><span>Seconds</span></div>
+  </div>
+  <p id="cmsg" style="margin-top:18px;color:var(--muted)">12 December 2026</p>
+</section>
+
+<section>
+  <div class="card">
+    <p class="num">01 / 02</p>
+    <h2 class="script" style="font-size:3rem">Mehndi</h2>
+    <p class="when"><b>10 December 2026</b></p>
+    <p class="venue">Football Ground</p>
+    <p style="margin:0;color:var(--muted)">Pak Arab Housing Society</p>
+    <div class="btns">
+      <a class="btn fill" href="https://maps.app.goo.gl/VvSubZ47Bzhb4GtJ7?g_st=aw" target="_blank" rel="noopener">Open location</a>
+      <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Saad%20%26%20Kadija%20%E2%80%94%20Mehndi&amp;dates=20261210/20261211&amp;location=Football%20Ground%2C%20Pak%20Arab%20Housing%20Society" target="_blank" rel="noopener">Add to calendar</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <p class="num">02 / 02</p>
+    <h2 class="script" style="font-size:3rem">Walima</h2>
+    <p class="when"><b>12 December 2026</b></p>
+    <p class="venue">Noor Mahal Marquee</p>
+    <p style="margin:0;color:var(--muted)">Kalamkar Road, Nushtar</p>
+    <div class="btns">
+      <a class="btn fill" href="https://maps.app.goo.gl/1Ly73a8af3o9aqkU6?g_st=aw" target="_blank" rel="noopener">Open location</a>
+      <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Saad%20%26%20Kadija%20%E2%80%94%20Walima&amp;dates=20261212/20261213&amp;location=Noor%20Mahal%20Marquee%2C%20Kalamkar%20Road%2C%20Nushtar" target="_blank" rel="noopener">Add to calendar</a>
+    </div>
+  </div>
+  <button class="btn" id="bless" type="button">✨ A shower of blessings</button>
+</section>
+
+<section class="footer">
+  <p class="eyebrow">The couple</p>
+  <p class="script">Saad &amp; Kadija</p>
+  <p style="font-style:italic">Two hearts, one promise</p>
+  <div class="divider"></div>
+  <p>We cannot wait to see you there.</p>
+</section>
+
+<script>
+(function(){
+  var gate=document.getElementById('gate');
+  function openGate(){gate.classList.add('open');shower()}
+  gate.addEventListener('click',openGate);
+  gate.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' ')openGate()});
+
+  var target=new Date('2026-12-12T00:00:00+05:00').getTime();
+  var el={d:document.getElementById('d'),h:document.getElementById('h'),m:document.getElementById('m'),s:document.getElementById('s')};
+  function tick(){
+    var t=Math.max(0,target-Date.now()),S=Math.floor(t/1000);
+    el.d.textContent=Math.floor(S/86400);
+    el.h.textContent=Math.floor(S%86400/3600);
+    el.m.textContent=Math.floor(S%3600/60);
+    el.s.textContent=S%60;
+    if(t===0)document.getElementById('cmsg').textContent='Today is the day — see you there! 💍';
+  }
+  tick();setInterval(tick,1000);
+
+  function shower(){
+    var chars=['❤️','🌹','✨','💍','🌸'];
+    for(var i=0;i<18;i++){(function(i){setTimeout(function(){
+      var e=document.createElement('div');e.className='heart';
+      e.textContent=chars[i%chars.length];
+      e.style.left=Math.random()*95+'vw';e.style.top='-30px';
+      document.body.appendChild(e);setTimeout(function(){e.remove()},2500);
+    },i*90)})(i)}
+  }
+  document.getElementById('bless').addEventListener('click',shower);
+})();
+</script>
+</body>
+</html>
